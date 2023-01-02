@@ -1,0 +1,23 @@
+{
+  "HostUrl": "http://localhost:8080",
+  "MySQLConfig": {
+    "HostUrl": "rosie.db.elephantsql.com",
+    "DatabaseName": "mkxzotzz",
+    "Username": "mkxzotzz",
+    "Password": "sC6J195ijOAY4ow_4yGLjoJnez49gcSJ",
+    "FullUrl": "postgres://mkxzotzz:sC6J195ijOAY4ow_4yGLjoJnez49gcSJ@rosie.db.elephantsql.com/mkxzotzz"
+  },
+  "GCSConfig": {
+    "BucketID": "college-async-gamification",
+    "Type": "service_account",
+    "ProjectID": "college-async-gamification",
+    "PrivateKeyID": "d36689efd6fa6e2c691756aa768731fbee10cd4d",
+    "PrivateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDpBNqhFMPGJUY5\nLMUWIJOcUhOsgLvzYBnu9VFD7ruZM3/0bfzftB27ITmoeXvkbk+CPgtOzk+CIwfv\ndPowMglwGJoO3uogdxFZPghlRnZ0B9dU8/MGTRrhTQ/MjPPPWQE6wJFep7pzGxCo\nb9QZ4sSqoEzWWGDCKLsj8D5VghG9OXXpaRkvn3VT2s/DbrJa0jhuLQGYr26zOUPx\nIkL7YiTc05qZgUzNQL67wcIXLlMSOnuiGup7YEGx3KIL2ja/WoOdg7mRQ+O7T+DZ\nmy/GHALKXDODnGsFXXX39SvFGWyaUnVtT133cl2N5AEHDqSuqrz14alzb1RV30Ns\nf8i3uK1nAgMBAAECggEATNeY8X3TgchQ/BHTfJSJmQdIDZ72XC/Y3YBwqCJWIxNk\nosqSlYLkOw2d4f0N6iqmdaDYQcivV48N0t2Uk8gsbJbwVu8T7ljVk8RtKFiwP1tG\nm3FHN1C+CIZNK3tf+4SybxmJ1tkhF0xZlfIq086AZHQwYo8KeXzNGfDj3XbjOq7T\nIpgCU9BahjbFgAqC0N1PNDIsUztuS0nbewPDeFjN27pc6OT3a2oC1CR9Mv5qoVwS\ncJiAAJDeB04WR/tadPeVtHhHb5BtRatPWoU3FaWaNUYSaNcPiJYoIt72+jjK7Urp\nxMG+cr1CLTy0ODc892Qbw0HUkq492JO8fuFUVvHTQQKBgQD4qFoL68yv7vQFpGHh\nokQJGzmwIFq78cJ3sQ2gNcb8p+06t4IEBmtfezJ/0822vTkaOLBTaaxPeSYcJSh7\nWSf3cwGrMCkk5bkvZ/xWu4V+rba3IlM6LWmQ6oT5+QsJyJK0Q83Ci4+P8hpJQqTK\noyfCt82ewjRYx2NFLg6SpOvyCQKBgQDv5klqFingj3tVJsXmPUSyLDlLPxjuwV4U\nWp96+HFXP+/j/XS8/3v8Gv6Wp7AMrN2D8dbNKmzwRuDpC5Wzb3W/59HAlNijkLyu\nP2PKvumHiWH4uItgs+As9v2CqZzlC5RdVYdxxIoYTIhcsJ1XShbdKHQh80suRLF5\nQvgdSjW/7wKBgD7DT6c+p3Wo3NMnwMURDhc2VgNMx1o1FZ7cg9HygP147Xoqo5ic\nfjGliQOW1I/Rhz5FHMyRGbsdmy7zehpYUKw2zS8GgvwbN/jtSFYkEvf8pOfotBU1\nLTY028e0wsJ/a/gwPRlj3KK6u0POnIXBVOHjPvVZk5jtCvOFQoxlMGDxAoGACoYk\ntFWykppYw7yGs/n+GH7eKJHlCxxKf0QWePOLLVOtt2e4Bk6C5uVcQ8mpbHTs5svm\nK2vwCX5igXazo4KBPODzj6o38rz3ugEn5I4JepupQ5r86koZzH8tUd0U9+tRH+MP\npQsFL9mzpbVNwbWLWTpcFd0xcB8tVe99KPPHddsCgYAVehqOy5uCN7UoZFhIxmxq\nSOdzQEhT0jvX4u8/yAcDl592Q2Kyf45IjwpfM+Jv2YxBFf+ncmatbRTM1UpZEiNY\nJG9GTrkqpLAMlRGI5yTQ3hh6vGaZxWsn3btNTaF41rzMKuf420wyZpwLftuNAnj5\nRaiQMLg9sIL1svVdPAI5Lg==\n-----END PRIVATE KEY-----\n",
+    "ClientEmail": "admin-357@college-async-gamification.iam.gserviceaccount.com",
+    "ClientID": "104244683726423177277",
+    "AuthURI": "https://accounts.google.com/o/oauth2/auth",
+    "TokenURI": "https://oauth2.googleapis.com/token",
+    "AuthProviderX509CertURL": "https://www.googleapis.com/oauth2/v1/certs",
+    "ClientX509CertURL": "https://www.googleapis.com/robot/v1/metadata/x509/admin-357%40college-async-gamification.iam.gserviceaccount.com"
+  }
+}

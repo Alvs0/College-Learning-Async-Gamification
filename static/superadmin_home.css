@@ -1,0 +1,50 @@
+body {
+    background-image: url("https://storage.googleapis.com/college-async-gamification/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.frame {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button {
+    margin: 20px;
+}
+.btn {
+    background: rgb(123,213,255);
+    background: linear-gradient(0deg, rgba(123,213,255,1) 0%, rgba(123,255,255,1) 100%);
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: darkblue;
+    padding: 45px 45px;
+    border-radius: 12px;
+}
+.btn:before {
+    height: 0%;
+    width: 2px;
+}
+.btn:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}

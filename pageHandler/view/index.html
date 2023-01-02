@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="3;url={{.loginUrl}}"/>
+    <title> Focen </title>
+    <style>
+        Body {
+            font-family: cursive, Helvetica, sans-serif;
+            background-image: url("https://storage.googleapis.com/college-async-gamification/background3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <script>
+        function redirectToLogin() {
+            location.href = {
+            {.
+                loginUrl
+            }
+        }
+        }
+    </script>
+</head>
+<body onclick="redirectToLogin()">
+<center><img src="https://storage.googleapis.com/college-async-gamification/test.gif"
+             style="height:150px; border-radius: 50%; margin: 100px; border: 3px solid #709dff;"></center>
+<center><h1 style="font-size:100px; color:white;">FOCEN</h1></center>
+</body>
+</html>  

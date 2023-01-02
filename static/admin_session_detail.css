@@ -1,0 +1,108 @@
+body {
+    background-image: url("https://storage.googleapis.com/college-async-gamification/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+.left-column img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.left-column img.active {
+    opacity: 1;
+}
+
+.session-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: white;
+    letter-spacing: -2px;
+}
+.session-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 24px;
+}
+
+button {
+    margin: 20px;
+}
+.btn {
+    background: rgb(255,85,75);
+    background: linear-gradient(0deg, rgba(255,85,75,1) 0%, rgba(200,85,75,1) 100%);
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: darkred;
+    padding: 45px 45px;
+    border-radius: 12px;
+}
+.btn:before {
+    height: 0%;
+    width: 2px;
+}
+.btn:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+h5 {
+    margin: 0;
+    color: white;
+}
+
+p {
+    margin: 0;
+    color: white;
+}

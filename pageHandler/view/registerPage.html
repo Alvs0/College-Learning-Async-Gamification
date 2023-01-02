@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <script>
+        function redirectToLogin(){
+            location.href = {{.loginUrl}}
+        }
+    </script>
+    <link rel="stylesheet" href="/static/register.css" type="text/css">
+</head>
+<body>
+<div id="alert-box" class="alert-box">
+    <p id="alert" class="alert"></p>
+</div>
+
+<div class="container">
+    <form>
+        <div id="form" class="form-field">
+            <input id="name" class="name" type="name" placeholder="Name" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="email" class="email" type="email" placeholder="Email" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="collegeName" class="collegeName" type="collegeName" placeholder="College Name" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="password" class="password" type="password" placeholder="Password" onkeyup='check();' required/>
+        </div>
+
+        <div class="form-field">
+            <input id="confirm-password" class="confirm-password" type="password" placeholder="Confirm Password" onkeyup='check();' required/>
+            <span id='message'></span>
+        </div>
+
+        <div class="form-field">
+            <input id="phone-number" class="phone-number" type="phone-number" placeholder="Phone Number" required/>
+        </div>
+
+        <div class="form-field">
+            <h5 for="birthday">Birthday: </h5>
+            <label>.</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div class="form-field">
+            <h5>Profile Image: </h5>
+            <input id="profileImage" name="profileImage" class="profileImage" type="file" required/>
+        </div>
+
+        <div class="form-field">
+            <button id="submit-btn" class="submit-btn" type="submit">Register</button>
+            <button id="cancel-btn" class="cancel-btn" onclick="redirectToLogin()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="/static/registerHandler.js"></script>
+</body>
+</html>

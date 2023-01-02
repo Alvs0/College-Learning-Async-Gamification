@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add College</title>
+    <script src="/static/loginChecker.js"></script>
+    <link rel="stylesheet" href="/static/header.css" type="text/css">
+    <link rel="stylesheet" href="/static/superadmin_college_detail.css" type="text/css">
+    <script src="/static/loginChecker.js"></script>
+    <script>
+        var id = {{.collegeId}};
+    </script>
+</head>
+<body>
+<div class="header">
+    <a href="{{.homeUrl}}" class="logo">Focen</a>
+    <div class="header-right">
+        <a class="active" href="{{.loginUrl}}">Logout</a>
+    </div>
+</div>
+
+<div id="alert-box" class="alert-box">
+    <p id="alert" class="alert"></p>
+</div>
+
+<div class="container">
+    <div class="left-column">
+        <img src="{{.collegeImageUrl}}"/>
+    </div>
+
+    <div class="right-column">
+        <div class="college-description">
+            <h1>{{.collegeName}}</h1>
+            <p>{{.collegeAddress}}</p>
+            <button id="deleteCollegeBtn" class="custom-btn btn">Delete College</button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/superadmin_college_detail.js"></script>
+
+</body>
+
+</html>

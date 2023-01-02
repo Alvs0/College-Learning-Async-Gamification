@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reward</title>
+    <script src="/static/loginChecker.js"></script>
+    <link rel="stylesheet" href="/static/student_reward_detail.css" type="text/css">
+    <link rel="stylesheet" href="/static/admin_home.css" type="text/css">
+    <script src="/static/loginChecker.js"></script>
+    <script>
+        var rewardId = {{.rewardId}};
+    </script>
+</head>
+<body>
+<main>
+    <div class="overlay"></div>
+    <nav class="nav">
+        <div class="toggle">
+            <span class="toggler">&raquo;</span>
+        </div>
+        <div class="logo">
+            <a href="{{.homeUrl}}"><img src="{{.collegeProfileImage}}" href="{{.homeUrl}}"/></a>
+        </div>
+        <ul>
+            <li><a href="{{.sessionUrl}}">Sessions</a></li>
+            <li><a href="{{.rewardUrl}}">Rewards</a></li>
+            <li><a href="{{.collegeDetailUrl}}">About College</a></li>
+            <li><a href="{{.loginUrl}}">Logout</a></li>
+        </ul>
+    </nav>
+</main>
+
+<script src="/static/admin_home.js"></script>
+
+<div id="alert-box" class="alert-box">
+    <p id="alert" class="alert"></p>
+</div>
+
+<div class="container">
+    <div class="left-column">
+        <img src="{{.rewardImageUrl}}"/>
+    </div>
+
+    <div class="right-column">
+        <form>
+
+        <div class="college-description">
+            <h1>{{.rewardName}}</h1>
+            <p>Description: {{.rewardDescription}}</p>
+            <p>Minimal Level: {{.rewardMinimalLevel}}</p>
+            <p>Required Points: {{.rewardRequiredPoints}}</p>
+            <p>IsActive: {{.rewardIsActive}}</p>
+
+            <div id="form" class="form-field">
+                <input id="quantity" class="quantity" type="number" placeholder="Quantity" required/>
+            </div>
+
+            <div class="form-field">
+                <button id="submit-btn" class="submit-btn" type="submit">Claim Reward</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
+<script src="/static/student_reward_detail.js"></script>
+
+</body>
+
+</html>

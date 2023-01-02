@@ -1,0 +1,158 @@
+body {
+    background-image: url("https://storage.googleapis.com/college-async-gamification/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tools {
+    overflow: auto;
+    zoom: 1;
+}
+
+.settings {
+    display: none;
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+button {
+    margin: 20px;
+}
+.btn {
+    background: rgb(123,213,255);
+    background: linear-gradient(0deg, rgba(123,213,255,1) 0%, rgba(123,255,255,1) 100%);
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: darkblue;
+    padding: 45px 45px;
+    border-radius: 12px;
+}
+.btn:before {
+    height: 0%;
+    width: 2px;
+}
+.btn:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.rewards {
+    width: 100%;
+    font-family: Raleway;
+}
+
+.reward {
+    display: inline-block;
+    width: calc(24% - 13px);
+    margin: 10px 10px 30px 10px;
+    vertical-align: top;
+}
+
+.reward img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 200px;
+    max-width: calc(100% - 20px);
+    background-cover: fit;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}
+
+.reward-content {
+    text-align: center;
+}
+
+.reward h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (max-width:1150px) {
+    .reward {
+        width: calc(33% - 23px);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .reward {
+        width: calc(50% - 43px);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .reward {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:401px) {
+    .settings {
+        display: block;
+    }
+    #view {
+        display: inline;
+    }
+    .rewards-table .reward {
+        display: block;
+        width: auto;
+        margin: 10px 10px 30px 10px;
+    }
+    .rewards-table .reward .reward-img {
+        display: inline-block;
+        margin: 0;
+        width: 120px;
+        height: 120px;
+        vertical-align: middle;
+    }
+    .rewards-table .reward img {
+        width: auto;
+        height: 120px;
+        max-width: 120px;
+    }
+    .rewards-table .reward-content {
+        text-align: left;
+        display: inline-block;
+        margin-left: 20px;
+        vertical-align: middle;
+        width: calc(100% - 145px);
+    }
+    .rewards-table .reward h3 {
+        margin: 0;
+        color: white;
+    }
+    .rewards-table .reward h4 {
+        margin: 0;
+        color: white;
+    }
+    .rewards-table .reward h5 {
+        margin: 0;
+        color: white;
+    }
+}
+
+.alert-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}

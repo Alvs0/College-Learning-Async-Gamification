@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Reward</title>
+    <script src="/static/loginChecker.js"></script>
+    <script>
+        function redirectToReward() {
+            location.href = {{.rewardUrl}}
+        }
+    </script>
+    <link rel="stylesheet" href="/static/admin_home.css" type="text/css">
+    <link rel="stylesheet" href="/static/admin_add_reward.css" type="text/css">
+</head>
+<body>
+<main>
+    <div class="overlay"></div>
+    <nav class="nav">
+        <div class="toggle">
+            <span class="toggler">&raquo;</span>
+        </div>
+        <div class="logo">
+            <a href="{{.homeUrl}}"><img src="{{.collegeProfileImage}}" href="{{.homeUrl}}"/></a>
+        </div>
+        <ul>
+            <li><a href="{{.sessionUrl}}">Sessions</a></li>
+            <li><a href="{{.rewardUrl}}">Rewards</a></li>
+            <li><a href="{{.studentUrl}}">Students</a></li>
+            <li><a href="{{.collegeDetailUrl}}">About College</a></li>
+            <li><a href="{{.loginUrl}}">Logout</a></li>
+        </ul>
+    </nav>
+</main>
+
+<script src="/static/admin_home.js"></script>
+
+<div id="alert-box" class="alert-box">
+    <p id="alert" class="alert"></p>
+</div>
+
+<div class="container">
+    <form>
+        <div id="form" class="form-field">
+            <input id="name" class="name" type="name" placeholder="Name" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="description" class="description" type="description" placeholder="Description" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="quantity" class="quantity" type="number" placeholder="Quantity" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="minimalLevel" class="minimalLevel" type="number" placeholder="Minimal Level" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="requiredPoints" class="requiredPoints" type="number" placeholder="Required Points" required/>
+        </div>
+
+        <div class="form-field">
+            <h5>Active: </h5>
+            <input id="isActive" class="isActive" type="checkbox" placeholder="Required Points" required/>
+        </div>
+
+        <div class="form-field">
+            <h5>Reward Image: </h5>
+            <input id="rewardImage" name="rewardImage" class="rewardImage" type="file" required/>
+        </div>
+
+        <div class="form-field">
+            <button id="submit-btn" class="submit-btn" type="submit">Add Reward</button>
+            <button id="cancel-btn" class="cancel-btn" onclick="redirectToReward()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="/static/admin_add_reward.js"></script>
+</body>
+
+</html>

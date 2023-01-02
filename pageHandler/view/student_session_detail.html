@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Session</title>
+    <script src="/static/loginChecker.js"></script>
+    <link rel="stylesheet" href="/static/student_session_detail.css" type="text/css">
+    <link rel="stylesheet" href="/static/admin_home.css" type="text/css">
+    <script src="/static/loginChecker.js"></script>
+    <script>
+        var id = {{.sessionId}};
+        var sessionLink = {{.sessionLink}};
+    </script>
+</head>
+<body>
+<main>
+    <div class="overlay"></div>
+    <nav class="nav">
+        <div class="toggle">
+            <span class="toggler">&raquo;</span>
+        </div>
+        <div class="logo">
+            <a href="{{.homeUrl}}"><img src="{{.collegeProfileImage}}" href="{{.homeUrl}}"/></a>
+        </div>
+        <ul>
+            <li><a href="{{.sessionUrl}}">Sessions</a></li>
+            <li><a href="{{.rewardUrl}}">Rewards</a></li>
+            <li><a href="{{.collegeDetailUrl}}">About College</a></li>
+            <li><a href="{{.loginUrl}}">Logout</a></li>
+        </ul>
+    </nav>
+</main>
+
+<script src="/static/admin_home.js"></script>
+
+<div id="alert-box" class="alert-box">
+    <p id="alert" class="alert"></p>
+</div>
+
+<div class="container">
+    <div class="left-column">
+        <img src="{{.sessionImageUrl}}"/>
+    </div>
+
+    <div class="right-column">
+        <div class="session-description">
+            <h1>{{.sessionName}}</h1>
+            <a href="{{.sessionLink}}"><p>Link: {{.sessionLink}}</p></a>
+            <button id="startSessionBtn" class="custom-btn btn">Start Session</button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/student_session_detail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    background-image: url("https://storage.googleapis.com/college-async-gamification/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tools {
+    overflow: auto;
+    zoom: 1;
+}
+
+.settings {
+    display: none;
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.colleges {
+    width: 100%;
+    font-family: Raleway;
+}
+
+.college {
+    display: inline-block;
+    width: calc(24% - 13px);
+    margin: 10px 10px 30px 10px;
+    vertical-align: top;
+}
+
+.college img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 200px;
+    max-width: calc(100% - 20px);
+    background-cover: fit;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}
+
+.college-content {
+    text-align: center;
+}
+
+.college h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (max-width:1150px) {
+    .college {
+        width: calc(33% - 23px);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .college {
+        width: calc(50% - 43px);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .college {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:401px) {
+    .settings {
+        display: block;
+    }
+    #view {
+        display: inline;
+    }
+    .colleges-table .college {
+        display: block;
+        width: auto;
+        margin: 10px 10px 30px 10px;
+    }
+    .colleges-table .college .college-img {
+        display: inline-block;
+        margin: 0;
+        width: 120px;
+        height: 120px;
+        vertical-align: middle;
+    }
+    .colleges-table .college img {
+        width: auto;
+        height: 120px;
+        max-width: 120px;
+    }
+    .colleges-table .college-content {
+        text-align: left;
+        display: inline-block;
+        margin-left: 20px;
+        vertical-align: middle;
+        width: calc(100% - 145px);
+    }
+    .colleges-table .college h3 {
+        margin: 0;
+        color: white;
+    }
+}

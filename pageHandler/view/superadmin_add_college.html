@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add College</title>
+    <script src="/static/loginChecker.js"></script>
+    <script>
+        function redirectToCollege(){
+            location.href = {{.collegeUrl}}
+        }
+    </script>
+    <link rel="stylesheet" href="/static/header.css" type="text/css">
+    <link rel="stylesheet" href="/static/superadmin_add_college.css" type="text/css">
+</head>
+<body>
+<div class="header">
+    <a href="{{.homeUrl}}" class="logo">Focen</a>
+    <div class="header-right">
+        <a id="logout" class="active" href="{{.loginUrl}}">Logout</a>
+    </div>
+</div>
+
+<div id="alert-box" class="alert-box">
+    <p id="alert" class="alert"></p>
+</div>
+
+<div class="container">
+    <form>
+        <div id="form" class="form-field">
+            <input id="name" class="name" type="name" placeholder="Name" required/>
+        </div>
+
+        <div class="form-field">
+            <input id="address" class="address" type="address" placeholder="Address" required/>
+        </div>
+
+        <div class="form-field">
+            <h5>College Image: </h5>
+            <input id="collegeIcon" name="collegeIcon" class="collegeIcon" type="file" required/>
+        </div>
+
+        <div class="form-field">
+            <button id="submit-btn" class="submit-btn" type="submit">Add College</button>
+            <button id="cancel-btn" class="cancel-btn" onclick="redirectToCollege()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="/static/superadmin_add_college.js"></script>
+</body>
+
+</html>
